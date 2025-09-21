@@ -11,7 +11,7 @@ function BtnUno({
   const [colorFondo, setColorFondo] = useState(colorFondoInicial);
   return (
     <div
-      className="slide-right boton__accion btn-hover"
+      className=" boton__accion btn-hover slide-right"
       style={{ backgroundColor: colorFondo }}
     >
       <a href={seccion} style={{ color: colorLetra }}>

@@ -25,6 +25,13 @@ function Home() {
   const logos = [facebookIcon, instagramIcon, xIcon];
   useRevealOnceOnScroll(".banner");
 
+  useEffect(() => {
+    const header = document.querySelector(".header");
+    if (header) {
+      header.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <div className="home">
       <section className="header">
@@ -40,7 +47,12 @@ function Home() {
                 asesorando empresas
               </p>
             </div>
-            <div className="boton"></div>
+            <div className="boton">
+              <BtnUno
+                colorLetraInicial={"var(--color-segundo)"}
+                seccion="#formulario"
+              />
+            </div>
           </div>
           <div className="numeros">
             <DataNumerico numero={10000} />
@@ -49,12 +61,17 @@ function Home() {
           </div>
           <div className="bloques">
             <div className="bloque__a">
-              <a href="#" className="enlace btn-hover slide-right">
-                <img src={IconoWhatsapp} alt="" />
+              <a
+                href="https://wa.me/51922773119?text=Hola%20quiero%20más%20información"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="enlace btn-hover slide-right"
+              >
+                <img src={IconoWhatsapp} alt="WhatsApp" />
               </a>
             </div>
             <div className="bloque__b">
-              <a href="#" className="wsp btn-hover slide-right">
+              <a href="#servicios" className="wsp btn-hover slide-right">
                 <p>Conoce más ➡︎</p>
               </a>
             </div>
@@ -84,6 +101,9 @@ function Home() {
         <div className="container">
           <FraseSuperior frase={"Invierte con Inteligencia"} />
           <h2>¿Por qué elegir nuestros servicios?</h2>
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, at!
+          </span>
           <div className="cars">
             <CarsUno imagen={ImagenOficinaUno} />
             <CarsUno imagen={ImagenOficinaUno} />

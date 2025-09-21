@@ -2,10 +2,12 @@ import "../../styles/common/carsuno.css";
 import BtnUno from "../bloc/BtnUno.jsx";
 import BtnAccionUno from "./BtnAccionUno.jsx";
 import useRevealOnce from "../../hooks/UseRevealOnce.jsx";
+import Lightbox from "./LightBox.jsx";
+import { useState } from "react";
 
 function CarsUno({ imagen, margin = "none" }) {
-
   const revealRef = useRevealOnce();
+  const [open, setOpen] = useState(false);
 
   return (
     <div ref={revealRef} className="carsuno reveal-pop">
@@ -20,9 +22,19 @@ function CarsUno({ imagen, margin = "none" }) {
         </p>
       </div>
       <div className="botones">
-        <BtnAccionUno imagen={imagen} colorInicial="var(--color-segundo)" colorLetra="white"/>
-        <BtnUno />
+        <BtnAccionUno
+          imagen={imagen}
+          colorInicial="var(--color-segundo)"
+          colorLetra="white"
+        />
+        <BtnUno seccion="#formulario" />
       </div>
+      <Lightbox
+        open={open}
+        src={imagen}
+        alt="Imagen ampliada"
+        onClose={() => setOpen(false)}
+      />
     </div>
   );
 }

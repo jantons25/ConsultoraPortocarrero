@@ -26,10 +26,26 @@
     font-size: var(--tamaño-letra-3);
 }
 
+.navbar .navbar__titulo .nombre .typewriter .mostrar{
+    display: none;
+    
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .navbar .navbar__titulo .nombre .typewriter .mostrar{
+    display:inline;
+    white-space: nowrap;
+}
+}
+
 @media (min-width: 1200px) {
     .navbar{
         background-color: var(--color-segundo);
         color: white;
         padding: var(--padding-seccion-1) var(--padding-seccion-2) 0 var(--padding-seccion-2);
+    }
+    .navbar .navbar__titulo .nombre .typewriter .mostrar{
+        display:inline;
+        white-space: nowrap;
     }
 }

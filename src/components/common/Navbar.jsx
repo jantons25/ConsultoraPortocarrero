@@ -18,7 +18,9 @@ function Navbar() {
       </div>
       <div className="navbar__titulo">
         <div className="nombre">
-          <p className="typewriter">Consultora</p>
+          <p className="typewriter">
+            Consultora <span className="mostrar">Portocarrero</span>
+          </p>
         </div>
         <div className="logo">P</div>
         <BtnUno

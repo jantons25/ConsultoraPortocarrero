@@ -232,6 +232,8 @@
 
     h2{
         font-size: var(--tamaño-letra-4);
+    }
+    span{
         margin-bottom: 130px;
     }
 }
@@ -379,6 +381,10 @@
     gap: 16px;
 }
 
+.home .formulario .caja__formulario{
+    margin-top: 48px;
+}
+
 @media (min-width: 768px) and (max-width: 1280px) {
 
     .home .header .container{
@@ -431,6 +437,7 @@
 
     .home .formulario .caja__formulario{
         width: 50%;
+        margin-top: 0;
     }
 
 }
@@ -532,13 +539,14 @@
     }
 
     .home .formulario .container{
-        width: 40%;
+        width: 50%;
         max-width: 300px;
     }
 
     .home .formulario .caja__formulario{
-        width: 60%;
+        width: 50%;
         display: flex;
         justify-content: flex-start;
+        margin-top: 0;
     }
 }

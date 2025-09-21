@@ -22,4 +22,15 @@
   /* Eliminar cursor */
 @keyframes hide-cursor {
     to { border-color: transparent; }
+}
+
+@media (min-width: 1200px) {
+  @keyframes typing {
+    from { width: 0 }
+    to   { width: 18ch } /* número de caracteres del texto */
   }
+
+  .typewriter{
+    font-size: var(--tamaño-letra-3);
+  }
+}

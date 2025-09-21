@@ -1,12 +1,14 @@
-import "../../styles/bloc/bloquedato.css"
+import "../../styles/bloc/bloquedato.css";
+import "../../styles/bloc/btnuno.css";
 
-function BloqueDato({colorFondo}) {
+function BloqueDato({ colorFondo }) {
+  /*slide-right*/
   return (
-    <div className="bloque__dato slide-right" style={{background:colorFondo}}>
-        <h3>100k</h3>
-        <p>lorem</p>
+    <div className="bloque__dato btn-hover" style={{ background: colorFondo }}>
+      <h3>100k</h3>
+      <p>lorem</p>
     </div>
-  )
+  );
 }
 
-export default BloqueDato
+export default BloqueDato;

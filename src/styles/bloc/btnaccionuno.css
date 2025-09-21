@@ -6,6 +6,7 @@
     justify-content: start;
     padding: 8px;
     border-radius: var(--border-primero);
+    cursor: pointer;
 }
 
 .btn__accion__uno a{
