@@ -1,4 +1,4 @@
-import "../../styles/bloc/BloqueTestimonio.css";
+import "../../styles/bloc/bloquetestimonio.css";
 import "../../styles/bloc/btnuno.css";
 import { CiStar } from "react-icons/ci";
 
