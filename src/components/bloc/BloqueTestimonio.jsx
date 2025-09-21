@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-import "../../styles/bloc/bloquetestimonio.css";
-=======
 import "../../styles/bloc/BloqueTestimonio.css";
 import "../../styles/bloc/btnuno.css";
->>>>>>> 7b62c9e (actualizaciones 1.001)
 import { CiStar } from "react-icons/ci";
 
 function BloqueTestimonio({ imagen, colorLetra, colorFondo }) {
