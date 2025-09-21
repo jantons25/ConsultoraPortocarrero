@@ -1,0 +1,22 @@
+.data-numerico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8px;
+    padding-top: 24px;
+    border-bottom: 1px solid var(--color-segundo);
+    h2{
+        font-size: var(--tamaño-letra-3);
+        font-weight: 300;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .data-numerico{
+        h2{
+            font-size: var(--tamaño-letra-5);
+        }
+    }
+
+}

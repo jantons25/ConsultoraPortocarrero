@@ -1,0 +1,23 @@
+.btn__accion__uno{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 8px;
+    border-radius: var(--border-primero);
+}
+
+.btn__accion__uno a{
+    display: grid;
+    place-content: center;
+    text-decoration: none;
+    color: var(--border-primero);
+    img{
+        width: 60px;
+        height: 40px;
+        margin-right: 8px;
+        border-radius: 8px;
+    }    
+}
+

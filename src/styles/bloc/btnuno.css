@@ -1,0 +1,13 @@
+.boton__accion{
+    width: auto;
+    max-width: 100px;
+    border-radius: var(--border-primero);
+    text-align: center;
+}
+
+.boton__accion a{
+    display: block;
+    padding: 16px 8px;
+    font-weight: 700;
+    text-decoration: none;
+}

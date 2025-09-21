@@ -1,0 +1,73 @@
+/* Contenedor */
+.social {
+    display: flex;
+    gap: 12px;
+  }
+  
+  /* Botón base */
+  .social-btn {
+    --size: 44px;
+    --bg: #fb9735;            /* color base (puedes usar var(--color-primary)) */
+    --fg: #0d1321;            /* color del icono */
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 12px;
+    background: var(--bg);
+    color: var(--fg);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+  }
+  
+  /* Ícono (SVG o IMG) */
+  .social-btn > svg,
+  .social-btn > img {
+    width: 22px;
+    height: 22px;
+    transition: transform .25s ease, opacity .25s ease;
+  }
+  
+  /* Lift + sombra */
+  .social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0,0,0,.18);
+  }
+  .social-btn:hover > svg,
+  .social-btn:hover > img {
+    transform: scale(1.06);
+  }
+  
+  /* Glow magnético que sigue el cursor (usa --x y --y) */
+  .social-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(120px 120px at var(--x,50%) var(--y,50%),
+                                 rgba(255,255,255,.28), transparent 45%);
+    opacity: 0;
+    transition: opacity .35s ease;
+    pointer-events: none;
+  }
+  .social-btn:hover::before { opacity: 1; }
+  
+  /* Accesibilidad: foco visible */
+  .social-btn:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px rgba(251,151,53,.6);
+  }
+  
+  /* Colores de marca en hover */
+  .social-btn.fb:hover    { background: #1877F2; color: #fff; }
+  .social-btn.ig:hover    { background: radial-gradient(90% 90% at 30% 30%, #feda77 0%, #f58529 30%, #dd2a7b 60%, #8134af 85%, #515bd4 100%); color:#fff; }
+  .social-btn.x:hover     { background: #0f1419; color: #fff; }
+  
+  /* Respeta usuarios con reduce motion */
+  @media (prefers-reduced-motion: reduce) {
+    .social-btn,
+    .social-btn > svg,
+    .social-btn::before { transition: none !important; transform: none !important; }
+  }
+  

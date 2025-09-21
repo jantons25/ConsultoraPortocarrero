@@ -1,0 +1,35 @@
+.navbar{
+    background-color: var(--color-segundo);
+    color: white;
+    padding: var(--padding-seccion-1) var(--padding-seccion-1) 0 var(--padding-seccion-1);
+}
+
+.navbar__titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.navbar__redes__bloc{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__titulo .nombre{
+    line-height: 1;
+    width: 100px;
+}
+
+.navbar__titulo .logo{
+    font-family: var(--fuente-signatrue);
+    font-size: var(--tamaño-letra-3);
+}
+
+@media (min-width: 1200px) {
+    .navbar{
+        background-color: var(--color-segundo);
+        color: white;
+        padding: var(--padding-seccion-1) var(--padding-seccion-2) 0 var(--padding-seccion-2);
+    }
+}

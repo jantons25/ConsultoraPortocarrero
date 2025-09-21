@@ -1,0 +1,25 @@
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid var(--color-primary, #fb9735); /* cursor */
+    width: 0;
+    /* typing escribe, luego blink parpadea, luego hide-cursor lo apaga */
+  animation: typing 3s steps(25, end) forwards, 
+  blink 0.75s step-end 4,
+  hide-cursor 0.1s forwards 4s;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to   { width: 9ch } /* número de caracteres del texto */
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: var(--color-primary, #fb9735) }
+  }
+  
+  /* Eliminar cursor */
+@keyframes hide-cursor {
+    to { border-color: transparent; }
+  }

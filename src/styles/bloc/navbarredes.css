@@ -1,0 +1,38 @@
+.navbar__redes ul{
+    background-color: var(--color-tercero);
+    width: 160px;
+    border-radius: var(--border-primero);
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__redes ul li a{
+    display: grid;
+    place-content: center;
+    padding: 8px 16px;
+}
+
+.navbar__redes ul li a img{
+    width: 16px;
+    height: 16px;
+}
+
+.img-hover {
+    display: inline-block;
+    overflow: hidden; /* evita que sobresalga al mover */
+    border-radius: 12px; /* opcional, da look moderno */
+  }
+  
+  .img-hover img {
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+  
+  .img-hover:hover img {
+    transform: translateY(-3px); /* se desplaza hacia arriba */
+    filter: brightness(1.05); /* opcional: pequeño brillo */
+  }
+  

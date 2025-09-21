@@ -1,0 +1,10 @@
+.btn-hover {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  }
+  
+.btn-hover:hover {
+    transform: translateY(-3px) scale(1.03);
+    background: #ffae57; /* tono más claro del naranja */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+  

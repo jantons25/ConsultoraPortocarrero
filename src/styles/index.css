@@ -1,0 +1,114 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'TT Fors';
+  src: url('../../fonts/TT-Fors-Trial-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Fors';
+  src: url('../../fonts/TT-Fors-Trial-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Fors';
+  src: url('../../fonts/TT-Fors-Trial-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Signatrue';
+  src: url('../../fonts/Signatrue.ttf') format('truetype');
+}
+
+:root{
+
+  /* Paleta de colores general*/
+  --color-primero: #E0E1DC;
+  --color-segundo: #0D1321;
+  --color-tercero: #FB9735;
+
+  /* Paleta de colores letras*/
+  --color-cuatro: #000000;
+  --color-quinto: #2C2C2C;
+  --color-sexto: #d0d0d0;
+
+  /* Letra Signatrue*/
+  --fuente-signatrue: 'Signatrue', cursive;
+
+  /* Redondeado de bloques*/
+  --border-primero: 8px;
+  --border-segundo: 16px;
+
+  /* Tamaño de letra 1*/
+  --tamaño-letra-1: 16px;
+  --tamaño-letra-2: 20px;
+  --tamaño-letra-3: 24px;
+  --tamaño-letra-4: 28px;
+  --tamaño-letra-5: 32px;
+  --tamaño-letra-6: 40px;
+  --tamaño-letra-7: 48px;
+  --tamaño-letra-8: 56px;
+  --tamaño-letra-9: 62px;
+  --tamaño-letra-10: 70px;
+
+  /* Padding secciones*/
+  --padding-seccion-1: 16px;
+  --padding-seccion-2: 32px;
+  --padding-seccion-3: 64px;
+  --padding-seccion-4: 128px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'TT Fors', sans-serif;
+}
+
+/* Animación base: fade + slide */
+.fade-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-slide.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efecto derecha a izquierda botones*/
+/* Estado inicial */
+.slide-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Estado final */
+.slide-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+/* Animaciones 
+
+  Reveal on scroll (fade/slide)
+  Stagger
+  Micro-interacciones de UI
+
+*/
