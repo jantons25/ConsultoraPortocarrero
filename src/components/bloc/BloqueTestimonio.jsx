@@ -1,4 +1,4 @@
-import "../../styles/bloc/bloquebestimonio.css";
+import "../../styles/bloc/bloquetestimonio.css";
 import { CiStar } from "react-icons/ci";
 
 function BloqueTestimonio({imagen, colorLetra, colorFondo}) {
